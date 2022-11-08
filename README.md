@@ -6,18 +6,17 @@ As a user I want to be able to track and modify my daily workouts to achieve my 
 ## Acceptance-Criteria
 GIVEN log in page I can submit my name and have it displayed on the Grynd-app.
 
-WHEN I enter a day of the week
+WHEN I choose a day of the week
 
-<!-- THEN I am presented with current and future conditions for that city and that city is added to the search history
+THEN I am presented with a form to choose workout types and lengths that are logged and displayed on the screen
 
-WHEN I view current weather conditions for that city
+WHEN I click the 'weekly' dropdown I can view previously logged workouts
 
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the the wind speed
+THEN I can begin my workout with a timer to track my progress
 
-WHEN I view future weather conditions for that city
+## Wireframe
+![Wireframe](./assets/img/screencapture-docs-google-presentation-d-1pEXKMuA6Fylk4uxW2pN34GunoDKNCb5jfK7jLyi3LxA-edit-2022-11-07-21_32_11.png)
+[Wireframe site](https://docs.google.com/presentation/d/1pEXKMuA6Fylk4uxW2pN34GunoDKNCb5jfK7jLyi3LxA/edit?usp=sharing)
 
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 
-WHEN I click on a city in the search history
 
-THEN I am again presented with current and future conditions for that city -->
