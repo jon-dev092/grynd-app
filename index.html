@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=\, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-        <!-- Compressed CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-        <!-- Compressed JavaScript -->
-        <title>Grynd</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grynd Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
 
-    <body>
-        <header>
-            <div class="nav-bar">
-                <h1>Gr<span class="Grynd">yn</span>d</h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">Routine</a>
-                        </li>
-                        <li>
-                            <a href="#">User</a>
-                        </li>
-                    </ul>
-            </nav>
-        </header>  
-        <main>
-            <section id="search-engine-optimization" class="content">
-                <img src="images/search-engine-optimization.jpg" alt="notebook for S.E.O" class="float-left">
-                <h2>Search Engine Optimization</h2>
-                <p>
-                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-                </p>
-            </section>
-            <section id="online-reputation-management" class="content">
-                <img src="images/online-reputation-management.jpg" alt="laptop icon" class="float-right">
-                <h2>Online Reputation Management</h2>
-                <p>
-                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-                </p>
-            </section>
-            <section id="social-media-marketing" class="content">
-                <img src="images/social-media-marketing.jpg" alt="meeting about S.M.M" class="float-left">
-                <h2>Social Media Marketing</h2>
-                <p>
-                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-                </p>
-            </section>
-        </main>
-        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    </body>
+
+
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+      
+      <div class="top-bar" id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Site Title</li>
+            <li class="has-submenu">
+              <a href="#0">One</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">One</a></li>
+                <li><a href="#0">Two</a></li>
+                <li><a href="#0">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#0">Two</a></li>
+            <li><a href="#0">Three</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+    </div>
+
+
+    
+    <div class="grid-x" id="weekbar">
+      <div class="cell">full width cell</div>
+      <div class="cell">full width cell</div>
+    </div>
+    <div class="grid-x">
+      <div class="cell small-6">6 cells</div>
+      <div class="cell small-6">6 cells</div>
+    </div>
+    <div class="grid-x">
+      <div class="cell medium-6 large-4">12/6/4 cells</div>
+      <div class="cell medium-6 large-8">12/6/8 cells</div>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <script src="./assets/js/vendor/jquery.js"></script>
+    <script src="./assets/js/vendor/what-input.js"></script>
+    <script src="./assets/js/vendor/foundation.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
