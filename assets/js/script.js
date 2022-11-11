@@ -6,6 +6,7 @@ var muscleGroup = document.querySelector('.muscle-group');
 var workoutTime = document.querySelector('.workout-time');
 var workoutCards = document.querySelector('.workout-cards');
 var cardBtn = document.querySelector('#cardBtn');
+var specificDate = document.querySelector('.specificDate');
 
 
 $("#current-day").text(moment().format("dddd, MMMM D" + "."))
@@ -77,7 +78,7 @@ saturday.addEventListener('click', function() {
 function appendWorkoutCard() {
     var cardEl = document.createElement('div');
     var cardDivider = document.createElement('div');
-    var cardDay = document.createElement('h4');
+    var cardDividerText = document.createElement('p');
     var cardImgVid = document.createElement('img');
     var cardSection = document.createElement('div');
     var cardElWorkType = document.createElement('p');
@@ -86,13 +87,15 @@ function appendWorkoutCard() {
 
 
     if(workoutType && muscleGroup && workoutTime) {
-        cardElWorkType.textContent = workoutType.value;
+        cardElWorkType.innerHTML = workoutType.value;
         cardElMuscleGroup.innerHTML = muscleGroup.value;
         cardElWorkTimer.innerHTML = workoutTime.value;
+        cardDividerText.innerHTML = specificDate.value;
+    
 
         workoutCards.appendChild(cardEl);
         cardEl.appendChild(cardDivider);
-        cardDivider.appendChild(cardDay);
+        cardDivider.appendChild(cardDividerText);
         cardEl.appendChild(cardImgVid);
         cardEl.appendChild(cardSection);
         cardSection.appendChild(cardElWorkType);
@@ -103,7 +106,13 @@ function appendWorkoutCard() {
         alert('missing option');
     }
 
+
+
+    cardEl.setAttribute('class', 'card');
+    
+    cardDivider.setAttribute('class', 'card-divider');
     cardImgVid.setAttribute('src', 'assets/img/generic/rectangle-1.jpg');
+    cardSection.setAttribute('class', 'card-section');
 
 }
 
