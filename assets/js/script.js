@@ -3,7 +3,7 @@ var btnDrop = document.querySelector('#example-dropdown');
 var selectedDateEl = document.querySelector('#selected-date');
 
 
-$("#current-day").text(moment().format("h:mm A on dddd, MMMM D" + "."))
+$("#current-day").text(moment().format("dddd, MMMM D" + "."))
 
 
 var sunday = document.querySelector("#day1");
