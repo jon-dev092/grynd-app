@@ -1,6 +1,12 @@
 var weekBtn = document.querySelector('.weekBtn');
 var btnDrop = document.querySelector('#example-dropdown');
 var selectedDateEl = document.querySelector('#selected-date');
+var workoutType = document.querySelector('.workout-type');
+var muscleGroup = document.querySelector('.muscle-group');
+var workoutTime = document.querySelector('.workout-time');
+var workoutCards = document.querySelector('.workout-cards');
+var cardBtn = document.querySelector('#cardBtn');
+var specificDate = document.querySelector('.specificDate');
 
 
 $("#current-day").text(moment().format("dddd, MMMM D" + "."))
@@ -67,5 +73,55 @@ function changeDate7() {
 saturday.addEventListener('click', function() {
     changeDate7();
 });
+
+
+function appendWorkoutCard() {
+    var cardEl = document.createElement('div');
+    var cardDivider = document.createElement('div');
+    var cardDividerText = document.createElement('p');
+    var cardImgVid = document.createElement('img');
+    var cardSection = document.createElement('div');
+    var cardElWorkType = document.createElement('p');
+    var cardElMuscleGroup = document.createElement('p');
+    var cardElWorkTimer = document.createElement('p');
+
+
+    if(workoutType && muscleGroup && workoutTime) {
+        cardElWorkType.innerHTML = workoutType.value;
+        cardElMuscleGroup.innerHTML = muscleGroup.value;
+        cardElWorkTimer.innerHTML = workoutTime.value;
+        cardDividerText.innerHTML = specificDate.value;
+    
+
+        workoutCards.appendChild(cardEl);
+        cardEl.appendChild(cardDivider);
+        cardDivider.appendChild(cardDividerText);
+        cardEl.appendChild(cardImgVid);
+        cardEl.appendChild(cardSection);
+        cardSection.appendChild(cardElWorkType);
+        cardSection.appendChild(cardElMuscleGroup);
+        cardSection.appendChild(cardElWorkTimer);
+
+    } else {
+        alert('missing option');
+    }
+
+
+
+    cardEl.setAttribute('class', 'card');
+    
+    cardDivider.setAttribute('class', 'card-divider');
+    cardImgVid.setAttribute('src', 'assets/img/generic/rectangle-1.jpg');
+    cardSection.setAttribute('class', 'card-section');
+
+}
+
+cardBtn.addEventListener('click', function() {
+    appendWorkoutCard();
+}); 
+
+
+
+
 
     
