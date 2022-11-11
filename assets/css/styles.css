@@ -16,3 +16,7 @@ html {
 #form-group {
     background-color: #e6e6e6;
 }
+
+.top-bar .top-bar-left {
+    max-width: fit-content;
+}
