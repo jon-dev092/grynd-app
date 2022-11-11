@@ -72,45 +72,48 @@
 
 
         <div class="cell" id="workout-form">
-          <div id="workout-type">
+
+          <div id="">
             <label>Type of Workouts.
-              <select>
-                <option value="cardio">Cardio</option>
+              <select class="workout-type">
+                <option value="Cardio">Cardio</option>
                 <option value="Strength">Strength Training</option>
-                <option value="hitt">HITT</option>
-                <option value="Strech">Streching</option>
+                <option value="HITT">HITT</option>
+                <option value="Streching">Streching</option>
               </select>
             </label>
           </div>
 
-          <div id="muscle-group">
+          <div id="">
             <label>What muscle group?
-              <select>
-                <option value="fullbody">Full Body</option>
-                <option value="upperbody">Upper Body</option>
-                <option value="lowerbody">Lower body</option>
+              <select class="muscle-group">
+                <option value="Fullbody">Full Body</option>
+                <option value="Upperbody">Upper Body</option>
+                <option value="Lowerbody">Lower body</option>
                 <option value="core">Core</option>
               </select>
             </label>
           </div>
 
-          <div id="workout-time">
+          <div id="">
             <label>Set a Timer.
-              <select>                
-                <option value="alpha">15min</option>
-                <option value="bravo">30min</option>
-                <option value="charlie">45min</option>
-                <option value="delta">60min</option>
+              <select class="workout-time">                
+                <option value="15min">15min</option>
+                <option value="30min">30min</option>
+                <option value="45min">45min</option>
+                <option value="60min">60min</option>
               </select>
             </label>
           </div>
+
+          <button class="submit success button" id="cardBtn">Save</button>
 
         </div>
 
       </div>
 
 
-      <div id="workout-cards"></div>
+      <div class="workout-cards"></div>
 
 
 
