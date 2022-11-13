@@ -36,7 +36,7 @@
             <li><a href="#0">Three</a></li>
           </ul>
         </div>
-        <h3 id="selected-date">Please select date</h3>
+        <h3 class="specificDate" id="selected-date">Please select date</h3>
         <div class="top-bar-right">
           <div class="top-bar-center">
             <p id="current-day"></p>
@@ -55,7 +55,7 @@
           <form>
             <div class="grid-container">
               <div class="grid-x grid-margin-y">
-                <div class="cell medium-6 specificDate">
+                <div class="cell medium-6">
                   <a href="#" class="button weekDay" id="day1" value="Sunday">Sunday</a>
                   <a href="#" class="button weekDay" id="day2" value="Monday">Monday</a>
                   <a href="#" class="button weekDay" id="day3" value="Tuesday">Tuesday</a>
@@ -90,7 +90,7 @@
                 <option value="Fullbody">Full Body</option>
                 <option value="Upperbody">Upper Body</option>
                 <option value="Lowerbody">Lower body</option>
-                <option value="core">Core</option>
+                <option value="Core">Core</option>
               </select>
             </label>
           </div>
@@ -113,12 +113,19 @@
       </div>
 
 
-      <div class="grid-x workout-cards"></div>
+      <div class="grid-x workout-cards">
+      </div>
 
 
 
     </div>
 
+
+
+
+
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
