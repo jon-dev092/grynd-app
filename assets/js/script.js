@@ -75,11 +75,14 @@ saturday.addEventListener('click', function() {
 });
 
 
+
+
 function appendWorkoutCard() {
+
     var cardEl = document.createElement('div');
     var cardDivider = document.createElement('div');
     var cardDividerText = document.createElement('p');
-    var cardImgVid = document.createElement('img');
+    var cardImgVid = document.createElement('iframe');
     var cardSection = document.createElement('div');
     var cardElWorkType = document.createElement('p');
     var cardElMuscleGroup = document.createElement('p');
@@ -90,7 +93,7 @@ function appendWorkoutCard() {
         cardElWorkType.innerHTML = workoutType.value;
         cardElMuscleGroup.innerHTML = muscleGroup.value;
         cardElWorkTimer.innerHTML = workoutTime.value;
-        cardDividerText.innerHTML = specificDate.value;
+        cardDividerText.innerHTML = specificDate.textContent;
     
 
         workoutCards.appendChild(cardEl);
@@ -106,19 +109,64 @@ function appendWorkoutCard() {
         alert('missing option');
     }
 
-
-
     cardEl.setAttribute('class', 'card');
-    
     cardDivider.setAttribute('class', 'card-divider');
-    cardImgVid.setAttribute('src', 'assets/img/generic/rectangle-1.jpg');
+    cardImgVid.setAttribute('id', 'player');
+    cardImgVid.setAttribute('type', 'text/html');
+    cardImgVid.setAttribute('width', '350');
+    cardImgVid.setAttribute('height', '196.88');
+    cardImgVid.setAttribute('frameborder', '0');
     cardSection.setAttribute('class', 'card-section');
+
+    if(workoutType.value === 'Cardio' && muscleGroup.value === 'Fullbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/kZDvg92tTMc?enablejsapi=1');
+    } else if (workoutType.value === 'Cardio' && muscleGroup.value === 'Upperbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/WGA_ctAMkMk?enablejsapi=1');
+    } else if (workoutType.value === 'Cardio' && muscleGroup.value === 'Lowerbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/VnmRhnbHbu4?enablejsapi=1');
+    } else if (workoutType.value === 'Cardio' && muscleGroup.value === 'Core') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/05fCNM9f0ic?enablejsapi=1');
+    }
+
+    if(workoutType.value === 'Strength' && muscleGroup.value === 'Fullbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/AjAVhtQ2vok?enablejsapi=1');
+    } else if (workoutType.value === 'Strength' && muscleGroup.value === 'Upperbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/NDOlPdyZLMg?enablejsapi=1');
+    } else if (workoutType.value === 'Strength' && muscleGroup.value === 'Lowerbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/_PRk8DH2_mY?enablejsapi=1');
+    } else if (workoutType.value === 'Strength' && muscleGroup.value === 'Core') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/lGYT00uTDqY?enablejsapi=1');
+    }
+
+    if(workoutType.value === 'HITT' && muscleGroup.value === 'Fullbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/M0uO8X3_tEA?enablejsapi=1');
+    } else if (workoutType.value === 'HITT' && muscleGroup.value === 'Upperbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/NF7XhCsITnU?enablejsapi=1');
+    } else if (workoutType.value === 'HITT' && muscleGroup.value === 'Lowerbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/fbJL4_ccF9Q?enablejsapi=1');
+    } else if (workoutType.value === 'HITT' && muscleGroup.value === 'Core') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/7-zjc6dAufg?enablejsapi=1');
+    }
+
+    if(workoutType.value === 'Streching' && muscleGroup.value === 'Fullbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/aZ1PzhThqcU?enablejsapi=1');
+    } else if (workoutType.value === 'Streching' && muscleGroup.value === 'Upperbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/5OyGvz_QfuY?enablejsapi=1');
+    } else if (workoutType.value === 'Streching' && muscleGroup.value === 'Lowerbody') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/UIRTPXj1Q1U?enablejsapi=1');
+    } else if (workoutType.value === 'Streching' && muscleGroup.value === 'Core') {
+        cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/aIt-vTovNuA?enablejsapi=1');
+    }
 
 }
 
 cardBtn.addEventListener('click', function() {
     appendWorkoutCard();
+
 }); 
+
+// https://www.youtube.com/embed/0hOMBqJnMks?enablejsapi=1
+// https://www.youtube.com/embed/6uLRtubw3ws?enablejsapi=1
 
 
 
