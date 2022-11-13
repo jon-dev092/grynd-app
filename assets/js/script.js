@@ -165,10 +165,6 @@ cardBtn.addEventListener('click', function() {
 
 }); 
 
-// https://www.youtube.com/embed/0hOMBqJnMks?enablejsapi=1
-// https://www.youtube.com/embed/6uLRtubw3ws?enablejsapi=1
-
-
 
 
 
