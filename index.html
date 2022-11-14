@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="./assets/css/app.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-
-
 
     <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
@@ -24,7 +23,7 @@
       <div class="top-bar" id="responsive-menu">
         <div class="top-bar-left">
           <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text">User Name</li>
+            <li class="menu-text" id="user-name"></li>
             <li class="has-submenu">
               <a href="#0">One</a>
               <ul class="submenu menu vertical" data-submenu>
@@ -37,11 +36,11 @@
             <li><a href="#0">Three</a></li>
           </ul>
         </div>
+        <h3 class="specificDate" id="selected-date">Please select date</h3>
         <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
+          <div class="top-bar-center">
+            <p id="current-day"></p>
+          </div>
         </div>
     </div>
 
@@ -50,20 +49,20 @@
 
       <div class="grid-y" id="form-group" style="height: 800px; width: 250px;">
 
-        <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
+        <button class="button" type="button" data-toggle="example-dropdown">Select Date</button>
         <div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
           Please Select a Day of the Week!
           <form>
             <div class="grid-container">
               <div class="grid-x grid-margin-y">
                 <div class="cell medium-6">
-                  <a href="#" class="button weekDay">Sunday</a>
-                  <a href="#" class="button weekDay">Monday</a>
-                  <a href="#" class="button weekDay">Tuesday</a>
-                  <a href="#" class="button weekDay">Wednesday</a>
-                  <a href="#" class="button weekDay">Thursday</a>
-                  <a href="#" class="button weekDay">Friday</a>
-                  <a href="#" class="button weekDay">Saturday</a>
+                  <a href="#" class="button weekDay" id="day1" value="Sunday">Sunday</a>
+                  <a href="#" class="button weekDay" id="day2" value="Monday">Monday</a>
+                  <a href="#" class="button weekDay" id="day3" value="Tuesday">Tuesday</a>
+                  <a href="#" class="button weekDay" id="day4" value="Wednesday">Wednesday</a>
+                  <a href="#" class="button weekDay" id="day5" value="Thursday">Thursday</a>
+                  <a href="#" class="button weekDay" id="day6" value="Friday">Friday</a>
+                  <a href="#" class="button weekDay" id="day7" value="Saturday">Saturday</a>
                 </div>               
               </div>
             </div>
@@ -73,9 +72,48 @@
 
 
         <div class="cell" id="workout-form">
-          
+
+          <div id="">
+            <label>Type of Workouts.
+              <select class="workout-type">
+                <option value="Cardio">Cardio</option>
+                <option value="Strength">Strength Training</option>
+                <option value="HITT">HITT</option>
+                <option value="Streching">Streching</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="">
+            <label>What muscle group?
+              <select class="muscle-group">
+                <option value="Fullbody">Full Body</option>
+                <option value="Upperbody">Upper Body</option>
+                <option value="Lowerbody">Lower body</option>
+                <option value="Core">Core</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="">
+            <label>Set a Timer.
+              <select class="workout-time">                
+                <option value="15min">15min</option>
+                <option value="30min">30min</option>
+                <option value="45min">45min</option>
+                <option value="60min">60min</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="submit success button" id="cardBtn">Save</button>
+
         </div>
 
+      </div>
+
+
+      <div class="grid-x workout-cards">
       </div>
 
 
@@ -83,6 +121,12 @@
     </div>
 
 
+
+
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
     <script src="./assets/js/vendor/jquery.js"></script>
