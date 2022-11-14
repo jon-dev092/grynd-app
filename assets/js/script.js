@@ -7,6 +7,7 @@ var workoutTime = document.querySelector('.workout-time');
 var workoutCards = document.querySelector('.workout-cards');
 var cardBtn = document.querySelector('#cardBtn');
 var specificDate = document.querySelector('.specificDate');
+var userName = document.querySelector('#user-name');
 
 
 $("#current-day").text(moment().format("dddd, MMMM D" + "."))
@@ -73,7 +74,6 @@ function changeDate7() {
 saturday.addEventListener('click', function() {
     changeDate7();
 });
-
 
 
 
@@ -157,15 +157,24 @@ function appendWorkoutCard() {
     } else if (workoutType.value === 'Streching' && muscleGroup.value === 'Core') {
         cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/aIt-vTovNuA?enablejsapi=1');
     }
-
 }
 
 cardBtn.addEventListener('click', function() {
     appendWorkoutCard();
-
 }); 
 
 
 
+function init() {
 
+    var email = localStorage.getItem("email");
+    userName.textContent = email;
     
+    if (userName.textContent === '') {
+        var loginnHtml = './Loginn.html';
+        document.location.replace(loginnHtml);
+    }
+}
+
+init();
+
