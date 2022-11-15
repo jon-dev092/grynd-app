@@ -1,0 +1,44 @@
+:root {
+    --light: rgb(219, 179, 140);
+  --dark: rgb(112, 84, 56);
+  --warm: rgb(253, 213, 153);
+  --blk: rgb(59, 58, 57);
+}
+
+body {
+    background-color: var(--blk);
+    
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1000px;
+    justify-content: center;
+    background-color: rgba(200, 50, 125, .04);
+}
+
+h1 {
+    text-align: center;
+    margin: 100px;
+    text-decoration: underline;
+    color: var(--light);
+    font-size: 60px;
+}
+
+.us {
+    text-align: center;
+}
+
+.photos {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: var(--light);
+}
