@@ -86,6 +86,15 @@ function appendWorkoutCard() {
     var cardElWorkType = document.createElement('p');
     var cardElMuscleGroup = document.createElement('p');
     var cardElWorkTimer = document.createElement('p');
+    var rmvBtn = document.createElement('button');
+    rmvBtn.innerHTML = ("Remove");
+    rmvBtn.style = ("color:red");
+
+    rmvBtn.addEventListener ("click", function() {
+        cardEl.remove();
+    }
+    
+    )
 
 
     if(workoutType && muscleGroup && workoutTime) {
@@ -103,6 +112,7 @@ function appendWorkoutCard() {
         cardSection.appendChild(cardElWorkType);
         cardSection.appendChild(cardElMuscleGroup);
         cardSection.appendChild(cardElWorkTimer);
+        cardSection.appendChild(rmvBtn);
 
     } else {
         alert('missing option');
