@@ -114,8 +114,6 @@ function appendWorkoutCard() {
         cardSection.appendChild(cardElWorkTimer);
         cardSection.appendChild(rmvBtn);
 
-    } else {
-        alert('missing option');
     }
 
     cardEl.setAttribute('class', 'card');
