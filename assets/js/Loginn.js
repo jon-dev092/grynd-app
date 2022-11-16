@@ -19,12 +19,10 @@ signUpButton.addEventListener("click", function(event) {
   var password = document.querySelector("#password").value;
 
   if (email === "") {
-    displayMessage("error", "Email cannot be blank");
+    displayMessage("error", "Must enter an email!");
   } else if (password === "") {
-    displayMessage("error", "Password cannot be blank");
+    displayMessage("error", "Must enter a password!");
   } else {
-    displayMessage("success", "Registered successfully");
-
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);  
     document.location.replace('./index.html');
