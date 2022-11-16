@@ -114,7 +114,7 @@ function appendWorkoutCard() {
         cardSection.appendChild(cardElWorkTimer);
         cardSection.appendChild(rmvBtn);
 
-    }
+    } 
 
     cardEl.setAttribute('class', 'card');
     cardDivider.setAttribute('class', 'card-divider');
