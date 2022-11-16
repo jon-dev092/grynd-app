@@ -20,3 +20,11 @@ html {
 .top-bar .top-bar-right {
     margin-top: auto;
 }
+
+.workout-cards {
+    height: 100vh;
+    width: 100%;
+    background-image: url(grynd-app/assets/img/workout-cards-background.jpg);
+    background-size:100%;
+    background-position: center;
+}
