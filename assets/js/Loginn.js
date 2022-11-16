@@ -26,11 +26,29 @@ signUpButton.addEventListener("click", function(event) {
     displayMessage("success", "Registered successfully");
 
     localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
-    
-
+    localStorage.setItem("password", password);  
     document.location.replace('./index.html');
   }
+});
+
+
+const apiKey = 'Nmp/fqCuCNi+rNQJkJeopA==ZzhTQpocvxTJEaOa';
+var quoteEl = document.querySelector('.quote-element'); 
+var authorEl = document.querySelector('.author-element');
+var category = 'fitness'
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+    headers: { 'X-Api-Key': apiKey},
+    contentType: 'application/json',
+    success: function(result) {
+        quoteEl.innerHTML = '"' + result[0].quote + '"';
+        authorEl.innerHTML = result[0].author;
+        console.log(result);
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
 });
 
 
