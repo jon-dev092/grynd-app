@@ -20,9 +20,13 @@ body {
   background-attachment: fixed;
 }
 
-.light-mode {
-  background-image: url("assets/img/pexels-nappy-936094.jpg");
-  color: var(--dark);
+p {
+  color: var(--light);
+  text-shadow: 2px 2px 3px rgb(117, 56, 3, 1);
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 
 .top-bar {
@@ -88,7 +92,7 @@ body {
 }
 
 .card-section {
-  background-color: var(--light);
+  background-color: var(--blk);
   color: var(--blk);
   text-align: center;
   font-weight: bolder;
