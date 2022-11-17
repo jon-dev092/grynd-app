@@ -36,6 +36,15 @@ html {
     margin-top: auto;
 }
 
+<<<<<<< HEAD
+.workout-cards {
+    height: 100vh;
+    width: 100%;
+    background-image: url(grynd-app/assets/img/workout-cards-background.jpg);
+    background-size:100%;
+    background-position: center;
+}
+=======
 #ig {
     margin-top: 7.5px;
 }
@@ -89,3 +98,4 @@ html {
   max-height: fit-content; */
 }
 >>>>>>> a8417cfb8f86efc3ba3654d2399bef741a9016e8
+>>>>>>> 7b00875e1ee3fb1c3c7c6e8c2e657105d69d97d5

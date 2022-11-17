@@ -76,7 +76,6 @@ saturday.addEventListener('click', function() {
 });
 
 
-
 function appendWorkoutCard() {
 
     var cardEl = document.createElement('div');
