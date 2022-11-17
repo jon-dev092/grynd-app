@@ -1,10 +1,5 @@
-var emailInput = document.querySelector("#email");
-var passwordInput = document.querySelector("#password");
-var signUpButton = document.querySelector("#sign-up");
+var signInButton = document.querySelector("#sign-in");
 var msgDiv = document.querySelector("#msg");
-var userEmailSpan = document.querySelector("#user-email");
-var userPasswordSpan = document.querySelector("#user-password");
-
 
 
 function displayMessage(type, message) {
@@ -12,19 +7,17 @@ function displayMessage(type, message) {
   msgDiv.setAttribute("class", type);
 }
 
-signUpButton.addEventListener("click", function(event) {
+signInButton.addEventListener("click", function(event) {
   event.preventDefault();
 
   var email = document.querySelector("#email").value;
   var password = document.querySelector("#password").value;
 
   if (email === "") {
-    displayMessage("error", "Email cannot be blank");
+    displayMessage("error", "Must enter an email!");
   } else if (password === "") {
-    displayMessage("error", "Password cannot be blank");
+    displayMessage("error", "Must enter a password!");
   } else {
-    displayMessage("success", "Registered successfully");
-
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);  
     document.location.replace('./index.html');

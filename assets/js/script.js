@@ -92,17 +92,13 @@ function appendWorkoutCard() {
 
     rmvBtn.addEventListener ("click", function() {
         cardEl.remove();
-    }
-    
-    )
-
+    })
 
     if(workoutType && muscleGroup && workoutTime) {
         cardElWorkType.innerHTML = workoutType.value;
         cardElMuscleGroup.innerHTML = muscleGroup.value;
         cardElWorkTimer.innerHTML = workoutTime.value;
         cardDividerText.innerHTML = specificDate.textContent;
-    
 
         workoutCards.appendChild(cardEl);
         cardEl.appendChild(cardDivider);
@@ -113,8 +109,15 @@ function appendWorkoutCard() {
         cardSection.appendChild(cardElMuscleGroup);
         cardSection.appendChild(cardElWorkTimer);
         cardSection.appendChild(rmvBtn);
+    }
 
+<<<<<<< HEAD
     } 
+=======
+    if (cardDividerText.innerHTML === 'Please select date') {
+        cardDividerText.innerHTML = '<br>'; 
+    }
+>>>>>>> 7b00875e1ee3fb1c3c7c6e8c2e657105d69d97d5
 
     cardEl.setAttribute('class', 'card');
     cardDivider.setAttribute('class', 'card-divider');
