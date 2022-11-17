@@ -86,6 +86,8 @@ function appendWorkoutCard() {
     var cardElWorkType = document.createElement('p');
     var cardElMuscleGroup = document.createElement('p');
     var cardElWorkTimer = document.createElement('p');
+    var btnEl = document.createElement('button');
+    
     var rmvBtn = document.createElement('button');
     rmvBtn.innerHTML = ("Remove");
     rmvBtn.style = ("color:red");
