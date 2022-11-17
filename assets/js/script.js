@@ -9,10 +9,10 @@ var cardBtn = document.querySelector('#cardBtn');
 var specificDate = document.querySelector('.specificDate');
 var userName = document.querySelector('#user-name');
 
-
+// Current time displayed
 $("#current-day").text(moment().format("dddd, MMMM D" + "."))
 
-
+// Change day functions
 var sunday = document.querySelector("#day1");
 function changeDate1() {
     selectedDateEl.innerHTML = "Sunday";
@@ -75,7 +75,7 @@ saturday.addEventListener('click', function() {
     changeDate7();
 });
 
-
+// Appends cards dynamically
 function appendWorkoutCard() {
 
     var cardEl = document.createElement('div');
@@ -126,6 +126,7 @@ function appendWorkoutCard() {
     cardImgVid.setAttribute('frameborder', '0');
     cardSection.setAttribute('class', 'card-section');
 
+    // Youtube videos on options
     if(workoutType.value === 'Cardio' && muscleGroup.value === 'Fullbody') {
         cardImgVid.setAttribute('src', 'https://www.youtube.com/embed/kZDvg92tTMc?enablejsapi=1');
     } else if (workoutType.value === 'Cardio' && muscleGroup.value === 'Upperbody') {
@@ -172,7 +173,7 @@ cardBtn.addEventListener('click', function() {
 }); 
 
 
-
+// function on page load
 function init() {
 
     var email = localStorage.getItem("email");

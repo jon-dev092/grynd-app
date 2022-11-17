@@ -1,7 +1,7 @@
 var signInButton = document.querySelector("#sign-in");
 var msgDiv = document.querySelector("#msg");
 
-
+// Displays message if email or password is not entered
 function displayMessage(type, message) {
   msgDiv.textContent = message;
   msgDiv.setAttribute("class", type);
@@ -24,7 +24,7 @@ signInButton.addEventListener("click", function(event) {
   }
 });
 
-
+// Quotes API
 const apiKey = 'Nmp/fqCuCNi+rNQJkJeopA==ZzhTQpocvxTJEaOa';
 var quoteEl = document.querySelector('.quote-element'); 
 var authorEl = document.querySelector('.author-element');
