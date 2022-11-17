@@ -28,19 +28,19 @@ This application features foundation framework, jquery, jqueryui, fonstastic, an
 been implimented to adjust to multiple screen sizes. 
 ![loginn.html screenshot](./assets/img/screencapture-file-C-Users-jp106-bootcamp-grynd-app-Loginn-html-2022-11-16-22_12_20.png)
 ![index.html screenshot](./assets/img/screencapture-file-C-Users-jp106-bootcamp-grynd-app-index-html-2022-11-16-22_10_57.png)
-![Contributors]()
+![Contributors](./assets/img/contributors.png)
 ![instagram screenshot](./assets/img/screencapture-instagram-grynd-fitness-2022-11-16-22_16_41.png)
 ![Slides](./assets/img/slides.png)
 
 ## Contributors
-[Jonathan Perez](https://github.com/jon-dev092)
-[Cristina Geremia]()
-[Carlos Martinez](https://github.com/ch4r1i3?tab=repositories)
+[Jonathan Perez](https://github.com/jon-dev092)                   
+[Cristina Geremia](https://github.com/cgeremia)                  
+[Carlos Martinez](https://github.com/ch4r1i3?tab=repositories)                  
 [Myles Nichols](https://github.com/MylesNichols?tab=repositories)
 
 ## Links
-[Deployed Page]()
-[Github Repo](https://github.com/jon-dev092/grynd-app)
+[Deployed Page]()                   
+[Github Repo](https://github.com/jon-dev092/grynd-app)                    
 [Google slides](https://docs.google.com/presentation/d/1VuReWAWcQrk-9wUzu8zkGsEd2sIWNwdDpG99fbPqlWQ/edit#slide=id.p)
 
 
