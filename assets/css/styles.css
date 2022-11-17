@@ -13,9 +13,20 @@ html {
   width: 100%;
 }
 
-.flex-container {
+body {
   background-image: url("https://www.nawpic.com/media/2020/gym-nawpic.webp");
-  object-fit: fill;
+  object-fit: repeat;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+p {
+  color: var(--light);
+  text-shadow: 2px 2px 3px rgb(117, 56, 3, 1);
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  
 }
 
 .top-bar {
@@ -72,7 +83,6 @@ HEAD
 
 .weekDay {
   background-color: var(--light);
-  font-family: monospace, sans-serif;
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
@@ -84,12 +94,21 @@ HEAD
   transition: 0.5s ease-in;
 }
 
+#cardBtn {
+  margin: 5px 60px;
+  padding: 5px 45px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .card-divider {
   background-color: var(--blk);
 }
+
 .card-section {
-  background-color: var(--warm);
+  background-color: var(--blk);
   color: var(--blk);
   border: 1px solid (--blk);
+  /* max-width: min-content;
+  max-height: fit-content; */
 }
-
