@@ -10,12 +10,6 @@ WHEN I log in to the app
 
 THEN I can see my information displayed
    
-GIVEN log in page I can see a quote and submit my email to have it displayed on the Grynd-app
-
-WHEN I log in to the app
-
-THEN I can see my information displayed
-
 WHEN I choose a day of the week
 
 THEN it is displayed I am presented with more options about workout types and muscle groups to excersize
