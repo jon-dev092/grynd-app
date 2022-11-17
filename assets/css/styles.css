@@ -109,6 +109,4 @@ HEAD
   background-color: var(--blk);
   color: var(--blk);
   border: 1px solid (--blk);
-  /* max-width: min-content;
-  max-height: fit-content; */
 }
