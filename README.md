@@ -39,7 +39,7 @@ been implimented to adjust to multiple screen sizes.
 [Myles Nichols](https://github.com/MylesNichols?tab=repositories)
 
 ## Links
-[Deployed Page]()                   
+[Deployed Page](https://jon-dev092.github.io/grynd-app/)                   
 [Github Repo](https://github.com/jon-dev092/grynd-app)                    
 [Google slides](https://docs.google.com/presentation/d/1VuReWAWcQrk-9wUzu8zkGsEd2sIWNwdDpG99fbPqlWQ/edit#slide=id.p)
 
