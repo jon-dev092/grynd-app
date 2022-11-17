@@ -5,50 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grynd Fitness</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/foundation.css" />
-    <link rel="stylesheet" href="./assets/css/app.css" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
 
-  <body>
-    <div
-      class="title-bar"
-      data-responsive-toggle="responsive-menu"
-      data-hide-for="medium"
-    >
-      <button
-        class="menu-icon"
-        type="button"
-        data-toggle="responsive-menu"
-      ></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
+<body>
 
-    <div class="top-bar" id="responsive-menu">
-      <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="menu-text" id="user-name"></li>
-          <li class="has-submenu">
-            <a href="#0">Display Mode</a>
-            <ul class="submenu menu vertical" data-submenu>
-              <li><a href="0">Light</a></li>
-              <li><a href="0">Dark</a></li>
-            </ul>
-          </li>
-          <li><a href="about.html" target="_blank">About Us</a></li>
-          <li><a href="group.html" target="_blank">Contributors</a></li>
-        </ul>
+    <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+        <div class="title-bar-title">Menu</div>
       </div>
-      <h3 class="specificDate" id="selected-date">Please select date</h3>
-      <div class="top-bar-right">
-        <div class="top-bar-center">
-          <p id="current-day"></p>
+      
+      <div class="top-bar" id="responsive-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text" id="user-name"></li>
+            <li class="has-submenu">
+              <a href="#0">Display Mode</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#0">Light</a></li>
+                <li><a href="#0">Dark</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+            <li><a href="group.html" target="_blank">Contributors</a></li>
+          </ul>
+        </div>
+        <h3 class="specificDate" id="selected-date">Please select date</h3>
+        <div class="top-bar-right">
+          <div class="top-bar-center">
+            <p id="current-day"></p>
+          </div>
         </div>
       </div>
     </div>

@@ -76,7 +76,6 @@ saturday.addEventListener('click', function() {
 });
 
 
-
 function appendWorkoutCard() {
 
     var cardEl = document.createElement('div');
@@ -93,17 +92,13 @@ function appendWorkoutCard() {
 
     rmvBtn.addEventListener ("click", function() {
         cardEl.remove();
-    }
-    
-    )
-
+    })
 
     if(workoutType && muscleGroup && workoutTime) {
         cardElWorkType.innerHTML = workoutType.value;
         cardElMuscleGroup.innerHTML = muscleGroup.value;
         cardElWorkTimer.innerHTML = workoutTime.value;
         cardDividerText.innerHTML = specificDate.textContent;
-    
 
         workoutCards.appendChild(cardEl);
         cardEl.appendChild(cardDivider);
@@ -114,9 +109,10 @@ function appendWorkoutCard() {
         cardSection.appendChild(cardElMuscleGroup);
         cardSection.appendChild(cardElWorkTimer);
         cardSection.appendChild(rmvBtn);
+    }
 
-    } else {
-        alert('missing option');
+    if (cardDividerText.innerHTML === 'Please select date') {
+        cardDividerText.innerHTML = '<br>'; 
     }
 
     cardEl.setAttribute('class', 'card');
